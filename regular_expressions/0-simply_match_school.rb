@@ -3,9 +3,8 @@
 regex = /School/
 input = ARGV[0]
 
-if input =~ regex
-  puts "School$"
-else
-  puts ""
-end
+# Match the regular expression against the input string
+match = input_string.match(/School/)
 
+# Print the matched string
+puts ARGV[0].scan(/School/).join
